@@ -6,6 +6,14 @@ export interface Location {
   name: string;
 }
 
+export interface ExtendedLocation extends Location {
+  result: {
+    locationID: number;
+    environmentID: number;
+    hint: string;
+  };
+}
+
 export interface Environment {
   environmentID: number;
   name: string;
